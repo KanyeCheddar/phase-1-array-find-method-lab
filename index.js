@@ -11,18 +11,12 @@ const record = [
 const record =  [ { result: "N/A" }, { result: "N/A" }, { result: "N/A" } ]
 
 
-/*
 function isW(season) {
-    for(const element in season){
-        if(result === "W") {
-            return element.year;
-        }
-    }
+    return season.result === "W";
 }
-*/
 
 function superbowlWin(record) {
-    const isChampion = record.find(championship => championship.result === "W");
+    const isChampion = record.find(isW);
     if(isChampion) {
         return isChampion.year;
     } else {
