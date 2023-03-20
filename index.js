@@ -1,14 +1,13 @@
 // code your solution here
-/*
-const record = [
+
+const eyeOfAChampion = [
     { year: "2015", result: "W"},
     { year: "2014", result: "N/A"},
     { year: "2013", result: "L"},
     //...
   ]
-*/
 
-const record =  [ { result: "N/A" }, { result: "N/A" }, { result: "N/A" } ]
+const bummySeason =  [ { result: "N/A" }, { result: "N/A" }, { result: "N/A" } ]
 
 
 function isW(season) {
@@ -24,4 +23,6 @@ function superbowlWin(record) {
     }
 }
 
-console.log(superbowlWin(record))
+console.log(superbowlWin(eyeOfAChampion))
+console.log(superbowlWin(bummySeason))
+
