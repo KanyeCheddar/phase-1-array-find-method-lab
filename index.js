@@ -7,8 +7,11 @@ const eyeOfAChampion = [
     //...
   ]
 
-const bummySeason =  [ { result: "N/A" }, { result: "N/A" }, { result: "N/A" } ]
-
+const bummySeason =  [ 
+    { result: "N/A" }, 
+    { result: "N/A" }, 
+    { result: "N/A" } 
+]
 
 function isW(season) {
     return season.result === "W";
@@ -16,6 +19,7 @@ function isW(season) {
 
 function superbowlWin(record) {
     const isChampion = record.find(isW);
+    //debugger;
     if(isChampion) {
         return isChampion.year;
     } else {
